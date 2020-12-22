@@ -23,20 +23,19 @@
 </template>
 
 <script>
-    export default {
-        data: function () {
-            return {
-                task: {}
-            }
-        },
-        methods: {
-            submit() {
-                axios.post('/api/tasks', this.task)
-                    .then((res) => {
-                        this.$router.push({name: 'task.list'});
-                    });
-            }
-        }
-    }
-    
+  export default {
+      data: function () {
+          return {
+              task: {}
+          }
+      },
+      methods: {
+          submit() {
+              axios.post('/api/tasks', this.task)
+                  .then((res) => {
+                      this.$router.push({name: 'task.list'});
+                  });
+          }
+      }
+  }
 </script>
