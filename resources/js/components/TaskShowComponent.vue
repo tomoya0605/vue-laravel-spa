@@ -9,7 +9,7 @@
                                v-model="task.id">
                     </div>
                     <div class="form-group row border-bottom">
-                        <label for="title" class="col-sm-3 col-form-label">Title</label>
+                        <label for="title" class="col-sm-3 col-form-label">書籍タイトル</label>
                         <input type="text" class="col-sm-9 form-control-plaintext" readonly id="title"
                                 v-model="task.title">
                     </div>
